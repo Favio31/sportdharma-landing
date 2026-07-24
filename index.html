@@ -14,24 +14,6 @@
         }
         .mono { font-family: 'JetBrains Mono', monospace; }
         
-        /* Foto de expedición completa sin cortes (mantiene proporción nativa) */
-        .hero-banner-container {
-            width: 100%;
-            background-color: #080d1a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .hero-image {
-            width: 100%;
-            max-width: 1280px;
-            height: auto;
-            max-height: 520px;
-            object-fit: contain;
-            display: block;
-        }
-
         .box-shadow-dark {
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
         }
@@ -39,8 +21,8 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between antialiased">
 
-    <!-- NAVBAR / HEADER (Solo el logo SD SportDharma) -->
-    <header class="w-full max-w-7xl mx-auto px-6 md:px-12 py-5 flex justify-start items-center">
+    <!-- NAVBAR / HEADER -->
+    <header class="w-full max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-start items-center">
         <div class="flex items-center gap-3 bg-slate-900/90 px-4 py-2 rounded-xl border border-slate-800">
             <div class="w-9 h-9 rounded-lg bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center text-cyan-400 font-bold text-lg mono">
                 SD
@@ -49,41 +31,52 @@
         </div>
     </header>
 
-    <!-- FOTO COMPLETA MOSTRANDO MONTAÑA Y RUEDAS SIN RECORTAR -->
-    <div class="hero-banner-container border-y border-slate-800/80 shadow-2xl">
-        <img src="expedition.jpg" alt="SportDharma Transcontinental Expedition" class="hero-image">
-    </div>
+    <!-- HERO SPLIT SECTION (IMAGEN A LA IZQUIERDA + ZÓCALO AZUL A LA DERECHA) -->
+    <section class="w-full border-y border-slate-800 bg-slate-950">
+        <div class="w-full max-w-[1500px] mx-auto grid grid-cols-1 lg:grid-cols-12 min-h-[550px]">
+            
+            <!-- COLUMNA IZQUIERDA: FOTO DE EXPEDICIÓN -->
+            <div class="lg:col-span-7 bg-slate-950 flex items-center justify-center overflow-hidden p-2 lg:p-0">
+                <img src="expedition.jpg" alt="SportDharma Transcontinental Expedition" class="w-full h-full object-cover max-h-[600px] lg:max-h-none">
+            </div>
 
-    <!-- TEXTO Y BOTONES EXTENDIDOS (MÁRGENES LATERALES ELEGANTES) -->
-    <section class="w-full max-w-7xl mx-auto px-6 md:px-16 py-10 text-center space-y-6">
-        
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/90 text-cyan-400 text-xs font-semibold tracking-wider uppercase mono">
-            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
-            Edge AI & SLM Architecture 2026
+            <!-- COLUMNA DERECHA: ZÓCALO AZUL CON TEXTO Y BOTONES -->
+            <div class="lg:col-span-5 bg-slate-900 border-l border-slate-800 p-8 md:p-12 lg:p-14 flex flex-col justify-center space-y-6">
+                
+                <!-- Insignia -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-slate-950 text-cyan-400 text-xs font-semibold tracking-wider uppercase mono w-max">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Edge AI & SLM Architecture 2026
+                </div>
+
+                <!-- Título -->
+                <h1 class="text-3xl md:text-4xl xl:text-5xl text-white font-black tracking-tight leading-tight uppercase">
+                    Engineered for Outdoor Resilience & Sports Performance.
+                </h1>
+
+                <!-- Bajada -->
+                <p class="text-sm md:text-base text-slate-300 font-medium leading-relaxed">
+                    Building the <strong class="text-cyan-400 font-bold">SportDharma Ecosystem</strong>—where AI orchestration, transcontinental experience, and athletic endurance converge.
+                </p>
+
+                <!-- Botones de Acción -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                    <a href="#pillars" class="px-8 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold text-xs tracking-wide transition-all shadow-lg text-center uppercase">
+                        Explore Ecosystem
+                    </a>
+                    <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-xl bg-slate-950 border border-slate-700 hover:border-cyan-400 text-slate-200 font-semibold text-xs transition-all text-center flex items-center justify-center gap-2">
+                        <span>Support via Ko-fi</span>
+                        <span>☕</span>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-        
-        <h1 class="text-3xl md:text-5xl lg:text-6xl text-white font-black tracking-tight leading-tight uppercase w-full">
-            Engineered for Outdoor Resilience & Sports Performance.
-        </h1>
-        
-        <p class="text-base md:text-xl text-slate-300 font-medium leading-relaxed w-full max-w-5xl mx-auto">
-            Building the <strong class="text-cyan-400 font-bold">SportDharma Ecosystem</strong>—where AI orchestration, transcontinental experience, and athletic endurance converge.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-5 pt-2">
-            <a href="#pillars" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold text-sm tracking-wide transition-all shadow-lg text-center uppercase">
-                Explore Ecosystem
-            </a>
-            <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-200 font-semibold text-sm transition-all text-center flex items-center justify-center gap-2">
-                <span>Support via Ko-fi</span>
-                <span>☕</span>
-            </a>
-        </div>
-
     </section>
 
     <!-- MAIN CONTENT (MÉTRICAS Y PILARES) -->
-    <main class="w-full max-w-7xl mx-auto px-6 md:px-16 py-6 flex-1 space-y-12">
+    <main class="w-full max-w-7xl mx-auto px-6 md:px-12 py-12 flex-1 space-y-12">
 
         <!-- Proof Metrics Section -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -105,7 +98,7 @@
         </section>
 
         <!-- Strategic Pillars -->
-        <section id="pillars" class="space-y-6 pt-4">
+        <section id="pillars" class="space-y-6 pt-2">
             <div class="text-center space-y-1">
                 <h2 class="text-2xl font-extrabold text-white uppercase tracking-tight">Ecosystem Pillars</h2>
                 <p class="text-slate-400 text-xs">Tecnología de misión crítica e inteligencia agéntica para operar en el borde.</p>
@@ -150,7 +143,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full max-w-7xl mx-auto px-6 md:px-16 py-6 border-t border-slate-800 text-slate-500 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
+    <footer class="w-full max-w-7xl mx-auto px-6 md:px-12 py-6 border-t border-slate-800 text-slate-500 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>
             © 2026 SportDharma Ecosystem. All rights reserved. Engineered for Outdoor Resilience.
         </div>
