@@ -9,122 +9,126 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0b0f17;
-            color: #e2e8f0;
+            background-color: #0b1120; /* Azul noche sólido, sin degradado */
+            color: #f1f5f9;
         }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .emerald-glow { box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.2); }
-        .hero-bg { background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.08) 0%, rgba(11, 15, 23, 1) 70%); }
+        
+        /* Imagen Hero a pantalla completa estilo SpainByBike */
+        .hero-banner {
+            background-image: linear-gradient(rgba(11, 17, 32, 0.55), rgba(11, 17, 32, 0.85)), url('expedition.jpg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between hero-bg antialiased">
+<body class="min-h-screen flex flex-col justify-between antialiased">
 
-    <!-- Header / Navbar -->
-    <header class="w-full max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold text-lg mono">
-                SD
-            </div>
-            <span class="text-xl font-extrabold tracking-tight text-white">SportDharma</span>
-        </div>
-        <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" 
-           class="px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all text-xs font-semibold tracking-wide uppercase mono">
-            Support Project ☕
-        </a>
-    </header>
-
-    <!-- Main Content -->
-    <main class="w-full max-w-6xl mx-auto px-6 py-12 flex-1 flex flex-col justify-center">
+    <!-- HERO SECTION A PANTALLA COMPLETA (Estilo foto de fondo) -->
+    <div class="hero-banner w-full border-b border-slate-800">
         
-        <!-- Hero Section -->
-        <section class="text-center space-y-8 max-w-4xl mx-auto my-8">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-950/40 text-emerald-400 text-xs font-semibold tracking-wider uppercase mono">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <!-- Header / Navbar integrado -->
+        <header class="w-full max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center text-cyan-400 font-bold text-lg mono">
+                    SD
+                </div>
+                <span class="text-2xl font-black tracking-tight text-white">SportDharma</span>
+            </div>
+            <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" 
+               class="px-5 py-2 rounded-full border border-cyan-500/40 bg-cyan-950/60 text-cyan-300 hover:bg-cyan-500 hover:text-slate-950 transition-all text-xs font-bold tracking-wider uppercase mono shadow-lg">
+                Support Project ☕
+            </a>
+        </header>
+
+        <!-- Hero Content (Pegado y compacto sobre la foto) -->
+        <section class="w-full max-w-4xl mx-auto px-6 py-16 md:py-24 text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/80 text-cyan-400 text-xs font-semibold tracking-wider uppercase mono backdrop-blur-sm">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
                 Edge AI & SLM Architecture 2026
             </div>
             
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight">
+            <h1 class="text-4xl md:text-6xl text-white font-black tracking-tight leading-tight uppercase">
                 Engineered for Outdoor Resilience <br class="hidden sm:inline">& Sports Performance.
             </h1>
             
-            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
-                Building the <strong class="text-slate-200 font-semibold">SportDharma Ecosystem</strong>—where AI orchestration, transcontinental experience, and athletic endurance converge.
+            <p class="text-base md:text-lg text-slate-200 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
+                Building the <strong class="text-cyan-400 font-semibold">SportDharma Ecosystem</strong>—where AI orchestration, transcontinental experience, and athletic endurance converge.
             </p>
 
-            <!-- Hero Image Banner -->
-            <div class="relative w-full max-w-4xl mx-auto my-8 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl emerald-glow">
-                <img src="expedition.jpg" alt="Transcontinental Outdoor Expedition" class="w-full h-auto object-cover max-h-[450px]">
-            </div>
-
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#pillars" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-emerald-500/20 text-center">
+                <a href="#pillars" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold text-sm tracking-wide transition-all shadow-lg text-center uppercase">
                     Explore Ecosystem
                 </a>
-                <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 font-medium text-sm transition-all text-center flex items-center justify-center gap-2">
+                <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700 hover:border-cyan-400 text-slate-200 font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 backdrop-blur-sm">
                     <span>Support via Ko-fi</span>
                     <span>☕</span>
                 </a>
             </div>
         </section>
+    </div>
+
+    <!-- MAIN CONTENT (Sólido, compacto y pegado) -->
+    <main class="w-full max-w-6xl mx-auto px-6 py-12 flex-1 space-y-12">
 
         <!-- Proof Metrics Section -->
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 my-16">
-            <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center space-y-2">
-                <div class="text-4xl font-extrabold text-emerald-400 mono">120,000+</div>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 text-center space-y-1">
+                <div class="text-4xl font-black text-cyan-400 mono">120,000+</div>
                 <div class="text-xs font-bold text-slate-300 uppercase tracking-wider">Kilometers</div>
-                <div class="text-xs text-slate-500">Transcontinental Cycling Expedition</div>
+                <div class="text-xs text-slate-400">Transcontinental Cycling Expedition</div>
             </div>
-            <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center space-y-2">
-                <div class="text-4xl font-extrabold text-emerald-400 mono">84</div>
+            <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 text-center space-y-1">
+                <div class="text-4xl font-black text-cyan-400 mono">84</div>
                 <div class="text-xs font-bold text-slate-300 uppercase tracking-wider">Countries</div>
-                <div class="text-xs text-slate-500">Extreme Field Logistics & Resilience</div>
+                <div class="text-xs text-slate-400">Extreme Field Logistics & Resilience</div>
             </div>
-            <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center space-y-2">
-                <div class="text-4xl font-extrabold text-emerald-400 mono">21+</div>
+            <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 text-center space-y-1">
+                <div class="text-4xl font-black text-cyan-400 mono">21+</div>
                 <div class="text-xs font-bold text-slate-300 uppercase tracking-wider">Years</div>
-                <div class="text-xs text-slate-500">Strategic Admin & AI Architecture</div>
+                <div class="text-xs text-slate-400">Strategic Admin & AI Architecture</div>
             </div>
         </section>
 
         <!-- Strategic Pillars -->
-        <section id="pillars" class="my-16 space-y-8">
-            <div class="text-center space-y-2">
-                <h2 class="text-3xl font-bold text-white">Ecosystem Pillars</h2>
-                <p class="text-slate-400 text-sm">Tecnología de misión crítica e inteligencia agéntica diseñada para operar en el borde.</p>
+        <section id="pillars" class="space-y-6 pt-4">
+            <div class="text-center space-y-1">
+                <h2 class="text-2xl font-extrabold text-white uppercase tracking-tight">Ecosystem Pillars</h2>
+                <p class="text-slate-400 text-xs">Tecnología de misión crítica e inteligencia agéntica para operar en el borde.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-emerald-500/40 transition-all space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold mono text-sm">
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-3">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold mono text-xs">
                         01
                     </div>
-                    <h3 class="text-xl font-bold text-white">SportDharma App</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
+                    <h3 class="text-lg font-bold text-white">SportDharma App</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
                         Asistencia en ruta, monitoreo biomecánico y analítica impulsada por IA para ciclistas y atletas outdoor.
                     </p>
-                    <div class="pt-2 text-xs text-emerald-400 font-semibold mono">EDGE AI / OFFLINE-FIRST</div>
+                    <div class="pt-1 text-[10px] text-cyan-400 font-bold mono uppercase">EDGE AI / OFFLINE-FIRST</div>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-emerald-500/40 transition-all space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold mono text-sm">
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-3">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold mono text-xs">
                         02
                     </div>
-                    <h3 class="text-xl font-bold text-white">Data & Field Intelligence</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
+                    <h3 class="text-lg font-bold text-white">Data & Field Intelligence</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
                         Algoritmos de logística, análisis de terreno y resiliencia de datos en entornos de baja conectividad hostil.
                     </p>
-                    <div class="pt-2 text-xs text-emerald-400 font-semibold mono">SQLITE & SLM LOCAL</div>
+                    <div class="pt-1 text-[10px] text-cyan-400 font-bold mono uppercase">SQLITE & SLM LOCAL</div>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-emerald-500/40 transition-all space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold mono text-sm">
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-3">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold mono text-xs">
                         03
                     </div>
-                    <h3 class="text-xl font-bold text-white">Global Community</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
+                    <h3 class="text-lg font-bold text-white">Global Community</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
                         Conexión descentralizada para expediciones, rutas transcontinentales y financiamiento colaborativo directo.
                     </p>
-                    <div class="pt-2 text-xs text-emerald-400 font-semibold mono">HUB DESCENTRALIZADO</div>
+                    <div class="pt-1 text-[10px] text-cyan-400 font-bold mono uppercase">HUB DESCENTRALIZADO</div>
                 </div>
             </div>
         </section>
@@ -132,12 +136,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full max-w-6xl mx-auto px-6 py-8 border-t border-slate-800/60 text-slate-500 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
+    <footer class="w-full max-w-6xl mx-auto px-6 py-6 border-t border-slate-800 text-slate-500 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>
             © 2026 SportDharma Ecosystem. All rights reserved. Engineered for Outdoor Resilience.
         </div>
-        <div class="flex items-center gap-4">
-            <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">Support via Ko-fi ☕</a>
+        <div>
+            <a href="https://ko-fi.com/favio31" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">Support via Ko-fi ☕</a>
         </div>
     </footer>
 
