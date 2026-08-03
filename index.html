@@ -17,6 +17,30 @@
         .box-shadow-dark {
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
         }
+        .dharma-sponsor-card {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #c9d1d9;
+}
+
+.btn-sponsor-github {
+    display: inline-block;
+    background-color: #238636;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-sponsor-github:hover {
+    background-color: #2ea043;
+}
     </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between antialiased">
@@ -60,15 +84,20 @@
                     <a href="#pillars" class="px-8 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold text-xs tracking-wide transition-all shadow-lg text-center uppercase">
                         Explore Ecosystem
                     </a>
-                    <a href="https://ko-fi.com/fmgiorgiodata" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-xl bg-slate-950 border border-slate-700 hover:border-cyan-400 text-slate-200 font-semibold text-xs transition-all text-center flex items-center justify-center gap-2">
-                        <span>Support via Ko-fi</span>
-                        <span>☕</span>
-                    </a>
-                </div>
+ <!-- Contenedor unificado para los botones de soporte -->
+    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 15px;">
+        
+        <!-- Botón de Ko-fi existente -->
+        <a href="https://ko-fi.com/fmgiorgiodata" target="_blank" rel="noopener noreferrer" style="background-color: #29abe0; color: #fff; padding: 10px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+            Support via Ko-fi ☕
+        </a>
 
-            </div>
+        <!-- Nuevo Botón de GitHub Sponsors -->
+        <a href="https://github.sponsors/Favio31" target="_blank" rel="noopener noreferrer" class="btn-sponsor-github">
+            ❤️ Sponsor on GitHub
+        </a>
 
-        </div>
+    </div>
     </section>
 
     <!-- MAIN CONTENT (MÉTRICAS Y PILARES) -->
