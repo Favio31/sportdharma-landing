@@ -16,7 +16,7 @@ Whether mapping out an intricate bicycle route across continents or architecting
 ### ☕ Support the Journey & Build the Future
 The development of the SportDharma Ecosystem is an ongoing mission built on transparency, technical rigor, and open contribution. If you believe in resilient engineering, advanced AI applications, and independent innovation, you can directly support this work:
 
-* **GitHub Sponsors:** [Your GitHub Sponsors Profile]
-* **Ko-Fi:** [Your Ko-Fi Link]
+* **GitHub Sponsors:** [Favio31 GitHub Sponsors](https://github.com/sponsors/Favio31)
+* **Ko-Fi:** [Buy me a coffee](https://ko-fi.com/fmgiorgiodata)
 
 *Building robust systems, executing the 2026 Curriculum, and pushing the boundaries of technology.*
