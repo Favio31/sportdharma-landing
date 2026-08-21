@@ -1,4 +1,5 @@
-# 🌍 From 120,000 Kilometers on Two Wheels to AI Architecture
+# SportDharma Ecosystem
+> From 120,000 Kilometers on Two Wheels to AI Architecture
 
 If someone asked me to describe decades of global cycle touring across 84 countries in a single word, my answer wouldn't hesitate: **Magical**. Every single pedal stroke—through malaria in Venezuela, extreme isolation in the Sahara, closed borders, and crushing climbs—built an unshakeable resilience. 
 
